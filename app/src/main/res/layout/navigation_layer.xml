@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.navigation.NavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_view"
+    app:insetForeground="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="end"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--第一级-->
+        <TextView
+            android:id="@+id/tv_theme"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#E4DFDF"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:text="主题"
+            android:textColor="@color/trans_black"
+            android:textStyle="bold"
+            app:layout_constraintHeight_percent="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_layer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tv_theme"
+            app:layout_constraintStart_toStartOf="@+id/tv_theme"
+            android:padding="10dp"/>
+
+        <!--第二级-->
+        <TextView
+            android:id="@+id/tv_action"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#E4DFDF"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:text="事件"
+            android:textColor="@color/trans_black"
+            android:textStyle="bold"
+            app:layout_constraintHeight_percent="0.05"
+            app:layout_constraintStart_toStartOf="@+id/rv_layer"
+            app:layout_constraintTop_toBottomOf="@+id/rv_layer" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.navigation.NavigationView>

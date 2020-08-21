@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ydzrzy</string>
+    <string name="ple_check_network">网络不给力，请检查网络设置</string>
+    <string name="wpyx_str">卫片影像</string>
+    <string name="google_street_str">谷歌交通</string>
+    <string name="vector_map_str">交通图</string>
+    <string name="offline_image_map_str">离线影像</string>
+    <string name="google_map_str">谷歌影像</string>
+    <string name="image_map_str">天地图影像</string>
+    <string name="location_permission_denied">User denied permission for device location.</string>
+</resources>

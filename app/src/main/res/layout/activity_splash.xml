@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/activity_splsh_bg_blue"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/turn_on_bg"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:scaleType="fitEnd">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitEnd"
+            android:src="@drawable/turn_on_bg"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="150.0dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100.0dip"
+            android:src="@drawable/log_logo5"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/log_iocn"
+            android:layout_width="fill_parent"
+            android:layout_height="44.0dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="112.0dip"
+            android:layout_marginTop="100.0dip"
+            android:layout_marginRight="112.0dip"
+            android:src="@drawable/log_logo6" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="45.0dip"
+            android:src="@drawable/splash_right"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/log_iocn"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="29.0dip"
+            android:layout_marginTop="80.0dip"
+            android:layout_marginRight="29.0dip"
+            android:layout_marginBottom="74.0dip"
+            android:src="@drawable/content_icon" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="14.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50.0dip"
+            android:src="@drawable/content_word" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/vp_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/activity_splsh_vp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/five_day_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/splash_bg_selector"
+            android:padding="5.0dip"
+            android:text="5天内不再提醒"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="35.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="87.0dip"
+            android:layout_marginRight="87.0dip"
+            android:layout_marginBottom="44.0dip"
+            android:background="@drawable/splash_bg_selector"
+            android:gravity="center"
+            android:text="立即体验"
+            android:textColor="#ff2795d0"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/splash_login"
+            android:layout_width="fill_parent"
+            android:layout_height="35.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="87.0dip"
+            android:layout_marginRight="87.0dip"
+            android:layout_marginBottom="44.0dip"
+            android:src="@mipmap/splash_login"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_splsh_bg_red"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_2020"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:scaleType="fitEnd"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/log_name_2020"
+            android:layout_width="fill_parent"
+            android:layout_height="190.0dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100.0dip"
+            android:src="@drawable/name_2020" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/log_name_2020"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/mouse_2020" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="14.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20.0dip"
+            android:src="@drawable/bottom_word_2020" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:background="@drawable/splash_bg_selector"
+        android:paddingLeft="11.0dip"
+        android:paddingTop="8.0dip"
+        android:paddingRight="11.0dip"
+        android:paddingBottom="8.0dip"
+        android:text="跳过"
+        android:textColor="@color/white"
+        android:textSize="12.0sp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/iv_loading"
+        android:layout_width="26.0dip"
+        android:layout_height="26.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginRight="15.0dip"
+        android:src="@drawable/splash_loading"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/version_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="15.0dip"
+        android:padding="5.0dip"
+        android:text="版本:V0.9"
+        android:textColor="@color/white"
+        android:textSize="12.0sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/logining"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/trans_black"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_time_logining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="30.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dip"
+            android:text="系统数据加载中…"
+            android:textColor="@color/white"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+</RelativeLayout>

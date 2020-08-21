@@ -1,0 +1,30 @@
+[
+  {
+    "id": "",
+    "defaultDrawable": "image_map_default",
+    "selectedDrawable": "image_map_pressed",
+    "title": "天地图",
+    "isSelected": true
+  },
+  {
+    "id": "",
+    "defaultDrawable": "image_google_map_default",
+    "selectedDrawable": "image_google_map_sel",
+    "title": "谷歌地图",
+    "isSelected": false
+  },
+  {
+    "id": "",
+    "defaultDrawable": "offline_image_map_default",
+    "selectedDrawable": "offline_image_map_pressed",
+    "title": "离线地图",
+    "isSelected": false
+  },
+  {
+    "id": "",
+    "defaultDrawable": "image_google_street_default",
+    "selectedDrawable": "image_google_street_sel",
+    "title": "交通地图",
+    "isSelected": false
+  }
+]
